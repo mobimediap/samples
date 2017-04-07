@@ -1,0 +1,50 @@
+//Youtube channel: simple steps to Android
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        showandprint("onCreate");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        showandprint("onStart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        showandprint("onResume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        showandprint("onPause");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        showandprint("onRestart");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        showandprint("onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        showandprint("onDestroy");
+        super.onDestroy();
+    }
+    private void showandprint(String s){
+        Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
+        System.out.println(s);
+    }
+}
