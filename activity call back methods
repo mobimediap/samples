@@ -1,0 +1,363 @@
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    protected void onChildTitleChanged(Activity childActivity, CharSequence title) {
+        super.onChildTitleChanged(childActivity, title);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    protected void onUserLeaveHint() {
+        super.onUserLeaveHint();
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Nullable
+    @Override
+    public ActionMode onWindowStartingActionMode(ActionMode.Callback callback) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onWindowStartingActionMode(callback);
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onContextItemSelected(item);
+    }
+
+    @Override
+    public boolean onCreateThumbnail(Bitmap outBitmap, Canvas canvas) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onCreateThumbnail(outBitmap, canvas);
+    }
+
+    @Override
+    public boolean onGenericMotionEvent(MotionEvent event) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onGenericMotionEvent(event);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public void onActivityReenter(int resultCode, Intent data) {
+        super.onActivityReenter(resultCode, data);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public void onPanelClosed(int featureId, Menu menu) {
+        super.onPanelClosed(featureId, menu);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
+        super.onSaveInstanceState(outState, outPersistentState);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onTouchEvent(event);
+    }
+
+    @Override
+    public boolean onTrackballEvent(MotionEvent event) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onTrackballEvent(event);
+    }
+
+    @Override
+    public boolean onKeyLongPress(int keyCode, KeyEvent event) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onKeyLongPress(keyCode, event);
+    }
+
+    @Override
+    public boolean onKeyUp(int keyCode, KeyEvent event) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onKeyUp(keyCode, event);
+    }
+
+    @Nullable
+    @Override
+    public ActionMode onWindowStartingActionMode(ActionMode.Callback callback, int type) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onWindowStartingActionMode(callback, type);
+    }
+
+    @Nullable
+    @Override
+    public View onCreatePanelView(int featureId) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onCreatePanelView(featureId);
+    }
+
+    @Override
+    public boolean onSearchRequested() {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onSearchRequested();
+    }
+
+    @Override
+    public Uri onProvideReferrer() {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onProvideReferrer();
+    }
+
+    @Override
+    public void onActionModeStarted(ActionMode mode) {
+        super.onActionModeStarted(mode);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public void onActionModeFinished(ActionMode mode) {
+        super.onActionModeFinished(mode);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public void onLocalVoiceInteractionStarted() {
+        super.onLocalVoiceInteractionStarted();
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public void onLocalVoiceInteractionStopped() {
+        super.onLocalVoiceInteractionStopped();
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public void onVisibleBehindCanceled() {
+        super.onVisibleBehindCanceled();
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public void onContentChanged() {
+        super.onContentChanged();
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public void onEnterAnimationComplete() {
+        super.onEnterAnimationComplete();
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public void onTrimMemory(int level) {
+        super.onTrimMemory(level);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public void onWindowAttributesChanged(WindowManager.LayoutParams params) {
+        super.onWindowAttributesChanged(params);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+
+    @Override
+    public void onSupportContentChanged() {
+        super.onSupportContentChanged();
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public void onSupportActionModeStarted(@NonNull android.support.v7.view.ActionMode mode) {
+        super.onSupportActionModeStarted(mode);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public void onProvideAssistData(Bundle data) {
+        super.onProvideAssistData(data);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public boolean onSearchRequested(@Nullable SearchEvent searchEvent) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onSearchRequested(searchEvent);
+    }
+
+    @Override
+    public void onContextMenuClosed(Menu menu) {
+        super.onContextMenuClosed(menu);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState, PersistableBundle persistentState) {
+        super.onRestoreInstanceState(savedInstanceState, persistentState);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Nullable
+    @Override
+    public android.support.v7.view.ActionMode onWindowStartingSupportActionMode(@NonNull android.support.v7.view.ActionMode.Callback callback) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onWindowStartingSupportActionMode(callback);
+    }
+
+    @Nullable
+    @Override
+    public CharSequence onCreateDescription() {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onCreateDescription();
+    }
+
+    @Override
+    protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public void onPrepareSupportNavigateUpTaskStack(@NonNull android.support.v4.app.TaskStackBuilder builder) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        super.onPrepareSupportNavigateUpTaskStack(builder);
+    }
+
+    @Override
+    public boolean onNavigateUp() {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onNavigateUp();
+    }
+
+    @Override
+    public void onCreateNavigateUpTaskStack(TaskStackBuilder builder) {
+        super.onCreateNavigateUpTaskStack(builder);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public boolean onKeyMultiple(int keyCode, int repeatCount, KeyEvent event) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onKeyMultiple(keyCode, repeatCount, event);
+    }
+
+    @Override
+    public boolean onKeyShortcut(int keyCode, KeyEvent event) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onKeyShortcut(keyCode, event);
+    }
+
+    @Override
+    public boolean onNavigateUpFromChild(Activity child) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onNavigateUpFromChild(child);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onOptionsItemSelected(item);
+    }
+
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    protected void onApplyThemeResource(Resources.Theme theme, @StyleRes int resid, boolean first) {
+        super.onApplyThemeResource(theme, resid, first);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        return super.onKeyDown(keyCode, event);
+    }
+
+    @Override
+    public void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public void finishAfterTransition() {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        super.finishAfterTransition();
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    @Override
+    public void onBackPressed() {
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+        super.onBackPressed();
+    }
+
+    @Override
+    public void onUserInteraction() {
+        super.onUserInteraction();
+        show(Thread.currentThread().getStackTrace()[2].getMethodName());
+    }
+
+    private void show(String s){
+        Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
+    }
+}
